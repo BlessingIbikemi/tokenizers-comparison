@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Secrets
+.env
+
+# VS Code
+.vscode/
+
+# Outputs
+tokenizer_models_full/
+results_full/

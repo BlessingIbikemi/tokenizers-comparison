@@ -1,0 +1,6 @@
+datasets
+tokenizers
+sentencepiece
+morfessor
+huggingface_hub
+python-dotenv
