@@ -1,13 +1,17 @@
 from datasets import load_dataset
 import re
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
 TEST_FRACTION = 0.10
 RANDOM_SEED = 42
 OUT_DIR = Path("tokenizer_models_full")
 OUT_DIR.mkdir(exist_ok=True)
 
-HF_TOKEN = "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"
+load_dotenv()
+
+HF_TOKEN = os.getenv("HF_TOKEN")
 
 def load_yankari():
     print("Loading Yankari (acflp/YANKARI) from Hugging Face ...")
